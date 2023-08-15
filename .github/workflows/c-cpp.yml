@@ -16,6 +16,4 @@ jobs:
 
       - name: Build C file
         run: |
-          dir
-          pwd
-          gcc -o project.exe project.c
+          gcc -o D:\a\build-c\build-c\project.exe D:\a\build-c\build-c\project.c
