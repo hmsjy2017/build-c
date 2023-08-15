@@ -13,12 +13,8 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Set up MSVC
-        uses: TheMrMilchmann/setup-msvc-dev@v2
-        with:
-          arch: x64
 
       - name: Build C file
         run: |
-          choco install mingw -y
+          dir
           gcc -o project.exe project.c
