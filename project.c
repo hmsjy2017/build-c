@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <windows.h>
 #include <conio.h>
+#include <stdbool.h>
 
 const int WALL = 1;
 const int EMPTY = 0;
