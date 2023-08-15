@@ -18,7 +18,8 @@ jobs:
         
       - name: Build C file
         run: |
-          gcc -o project.exe project.c
+          rm project.exe
+          gcc -finput-charset=UTF-8 -fexec-charset=UTF-8 -o project.exe project.c
 
       - name: Upload
         run: |
