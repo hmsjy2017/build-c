@@ -16,5 +16,6 @@ jobs:
 
       - name: Build C file
         run: |
-          dir
+          ls
+          pwd
           gcc -o project.exe project.c
