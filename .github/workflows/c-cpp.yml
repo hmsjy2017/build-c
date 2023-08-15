@@ -1,0 +1,22 @@
+name: Build C file on Windows
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Set up MSVC
+        uses: actions/setup-msbuild@v1
+
+      - name: Build C file
+        run: |
+          choco install mingw -y
+          gcc -o project.exe project.c
