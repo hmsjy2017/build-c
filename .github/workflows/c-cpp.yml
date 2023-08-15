@@ -14,7 +14,9 @@ jobs:
 
     steps:
       - name: Set up MSVC
-        uses: actions/setup-msbuild@v1
+        uses: TheMrMilchmann/setup-msvc-dev@v2
+        with:
+          arch: x64
 
       - name: Build C file
         run: |
